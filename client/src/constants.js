@@ -1,0 +1,10 @@
+// routes
+const HOME_ROUTER = "/";
+const REPOSITORIES_ROUTER = HOME_ROUTER;
+const REPOSITORY_ROUTER = `${REPOSITORIES_ROUTER}:id`;
+
+export default {
+    HOME_ROUTER,
+    REPOSITORIES_ROUTER,
+    REPOSITORY_ROUTER
+};

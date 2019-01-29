@@ -1,0 +1,47 @@
+.repository__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .repository__actions {
+        min-width:  210px;
+        display: flex;
+        justify-content: space-between;
+    
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            outline: none;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            &.open_repo {
+                transition: all .4s ease;
+                
+                &:disabled {
+                    cursor: not-allowed;
+                }
+
+                &:not(:disabled):hover {
+                    transform: scale(1.1);
+                    background-color:skyblue;
+                }
+            }
+
+            &.back {
+                width: 80px;
+                transition: all .4s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
